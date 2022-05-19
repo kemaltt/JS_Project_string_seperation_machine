@@ -59,6 +59,10 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    background-color: rgb(72, 72, 229);
+}
+
 .output {
     padding: 2vh 0;
 }

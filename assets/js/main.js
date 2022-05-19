@@ -11,26 +11,30 @@ const absenden = () => {
     let indexTrennunsPosition = zeichenkette.indexOf(trennungsPosition);
     let vordererTeil;
     let hintererTeil;
-    if (zeichenkette == '' || trennungsPosition == '') {
-        alert('Gib bitte einen Wert ein!')
-        resultVorderer.innerHTML = '';
-        resultHinterer.innerHTML = '';
-    } else {
 
+
+    if (zeichenkette == '') {
+        alert('Gib bitte einen Wert ein!')
+        resultHinterer.innerHTML = '';
+
+    } else if (trennungsPosition == '') {
+        alert('Gib bitte Trennungsposition  ein!')
+    } else {
         if (indexTrennunsPosition !== -1) {
             if (radioDavor.checked) {
                 vordererTeil = zeichenkette.slice(0, indexTrennunsPosition)
-                console.log(vordererTeil);
                 hintererTeil = zeichenkette.slice(indexTrennunsPosition)
             } else {
                 vordererTeil = zeichenkette.slice(0, indexTrennunsPosition + trennungsPosition.length)
                 hintererTeil = zeichenkette.slice(indexTrennunsPosition + trennungsPosition.length)
             }
-        } else if (radioDanach.checked) {
+        } else {
             vordererTeil = 'Fehler!!!'
             hintererTeil = zeichenkette;
         }
         resultVorderer.innerHTML = vordererTeil;
         resultHinterer.innerHTML = hintererTeil;
+
     }
+
 }
