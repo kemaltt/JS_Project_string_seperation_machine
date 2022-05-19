@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital@1&family=Roboto+Mono&family=Rubik+Microbe&family=Titillium+Web&display=swap');
+
+/* 
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik Microbe', cursive;
+font-family: 'Titillium Web', sans-serif;
+farbe #AAB8C3,#D8C164, #4A9EBE,#C198FB,#1D2025
+*/
+
+
+/*============================
+General Styles
+=========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4A9EBE;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+section {
+    background-color: #D8C164;
+    margin: 30vh 15%;
+    padding: 2vh 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+h3 {
+    margin: 1vh 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-radio {
+    margin: 2vh 0;
+}
+
+.input-radio div {
+    padding: 2px 0;
+}
+
+.input-text input {
+    width: 70%;
+    margin: 4px auto;
+    padding: 6px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(7, 7, 168);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.output {
+    padding: 2vh 0;
+}
+
+.output-ausgabe {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh 0;
+}
+
+p {
+    color: tomato;
+}
