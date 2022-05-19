@@ -1,12 +1,13 @@
 let radioDavor = document.getElementById('radio-davor')
 let radioDanach = document.getElementById('radio-danach')
 let resultVorderer = document.getElementById('output-vorderer')
-let resultHinterer = document.getElementById('ouput-hinterer')
+let resultHinterer = document.getElementById('output-hinterer')
 
 
 
 const absenden = () => {
     let zeichenkette = document.getElementById('input-text').value
+        // console.log(zeichenkette);
     let trennungsPosition = document.getElementById('input-text2').value
     let indexTrennunsPosition = zeichenkette.indexOf(trennungsPosition);
     let vordererTeil;
@@ -26,8 +27,8 @@ const absenden = () => {
         hintererTeil = zeichenkette;
     }
 
-    console.log(vordererTeil);
-    console.log(hintererTeil);
+    // console.log(vordererTeil);
+    // console.log(hintererTeil);
     resultVorderer.innerHTML = vordererTeil;
     resultHinterer.innerHTML = hintererTeil;
 

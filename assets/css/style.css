@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital@1&family=Roboto+Mono&family=Rubik+Microbe&family=Titillium+Web&display=swap');
 
-/* 
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Rubik Microbe', cursive;
-font-family: 'Titillium Web', sans-serif;
-farbe #AAB8C3,#D8C164, #4A9EBE,#C198FB,#1D2025
-*/
-
-
 /*============================
 General Styles
 =========================*/
@@ -27,7 +17,7 @@ body {
 
 section {
     background-color: #D8C164;
-    margin: 30vh 15%;
+    margin: 20vh 20%;
     padding: 2vh 0;
     text-align: center;
     border-radius: 10px;
