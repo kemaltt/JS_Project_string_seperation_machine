@@ -9,6 +9,7 @@ const absenden = () => {
     let zeichenkette = document.getElementById('input-text').value
     let trennungsPosition = document.getElementById('input-text2').value
     let indexTrennunsPosition = zeichenkette.indexOf(trennungsPosition);
+    console.log(indexTrennunsPosition);
     let vordererTeil;
     let hintererTeil;
 
@@ -18,7 +19,7 @@ const absenden = () => {
         resultHinterer.innerHTML = '';
 
     } else if (trennungsPosition == '') {
-        alert('Gib bitte Trennungsposition  ein!')
+        alert('Gib bitte Trennungsposition  ein')
     } else {
         if (indexTrennunsPosition !== -1) {
             if (radioDavor.checked) {
@@ -29,12 +30,11 @@ const absenden = () => {
                 hintererTeil = zeichenkette.slice(indexTrennunsPosition + trennungsPosition.length)
             }
         } else {
-            vordererTeil = 'Fehler!!!'
-            hintererTeil = zeichenkette;
+            vordererTeil = zeichenkette
+            hintererTeil = 'Das Zeichen konnte leider nicht gefunden werden!!!';
         }
         resultVorderer.innerHTML = vordererTeil;
         resultHinterer.innerHTML = hintererTeil;
-
     }
 
 }
