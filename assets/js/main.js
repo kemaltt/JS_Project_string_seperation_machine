@@ -30,8 +30,8 @@ const absenden = () => {
                 hintererTeil = zeichenkette.slice(indexTrennunsPosition + trennungsPosition.length)
             }
         } else {
-            vordererTeil = zeichenkette
-            hintererTeil = 'Das Zeichen konnte leider nicht gefunden werden!!!';
+            vordererTeil = 'Das Zeichen konnte leider nicht gefunden werden!!!';
+            hintererTeil = zeichenkette;
         }
         resultVorderer.innerHTML = vordererTeil;
         resultHinterer.innerHTML = hintererTeil;
